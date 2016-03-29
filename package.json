@@ -1,0 +1,28 @@
+{
+    "jspm": {
+        "name": "app",
+        "dependencies": {
+            "rxjs": "npm:rxjs@^5.0.0-beta.4"
+        },
+        "devDependencies": {
+            "plugin-typescript": "github:frankwallis/plugin-typescript@^4.0.5"
+        },
+        "peerDependencies": {
+            "process": "github:jspm/nodelibs-process@^0.2.0-alpha"
+        },
+        "overrides": {
+            "npm:typescript@1.8.9": {
+                "browser": {},
+                "map": {
+                    "buffer": "@empty",
+                    "child_process": "@empty",
+                    "fs": "@empty",
+                    "os": "@empty",
+                    "path": "@empty",
+                    "process": "@empty",
+                    "readline": "@empty"
+                }
+            }
+        }
+    }
+}
